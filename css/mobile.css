@@ -1,0 +1,50 @@
+@media screen and (max-width: 480px) {
+  .nav-container {
+    padding: 0;
+  }
+
+  #menu-icon {
+    display: inline-block;
+    color: white;
+    padding: 15px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 10px;
+  }
+
+  .menu-container {
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: var(--fourth-color);
+    position: absolute;
+    left: -200px;
+    transition: all .5s linear;
+  }
+
+  .menu-container.open {
+    left: 0px;
+    transition: all .5s linear;
+  }
+
+
+  .menu-container li {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .menu-container a {
+    display: block;
+    width: 100%;
+    border-bottom: 2px white dotted;
+  }
+
+  .info-article {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
